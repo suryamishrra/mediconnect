@@ -1,0 +1,270 @@
+<html>   
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=l">
+  <title>Apollo Hospital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <style>
+    .container2 {
+      width: 1500px;
+      height: 100px;
+      text-align: left;
+      /* background-color: lightgreen; */
+      background: radial-gradient(circle at 10% 20%, rgb(161, 255, 206) 0%, rgb(250, 255, 209) 90%);
+      margin: auto;
+    }
+
+    .vision {
+      text-align: center;
+      color: darkseagreen;
+      font-family: "Georgia";
+      font-size: "20px";
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width:999px) {
+      .container2 {
+        width: 100%;
+        height: auto;
+        margin: auto;
+      }
+    }
+
+    .hov:hover {
+      border: 1px solid black;
+      border-radius: 5px;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .hov {
+      text-align: center;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-width: 5px;
+    }
+
+    body {
+      overflow-x: hidden;
+      background-color: #f8f9fa;
+    }
+
+    .frm {
+      /* border: 2px solid red; */
+      margin-left: auto;
+      margin-top: 15px;
+    }
+
+    .btn {
+      background-color: rgb(31, 30, 30);
+      color: white;
+    }
+
+    .appointment-form {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="container2">
+
+        <div class="row">
+          <div class="col-md-1">
+            <!-- <img src="images\logo.jpeg" class="image-fluid" width="100px"> -->
+            <img src="images\logo.png" class="image-fluid" width="100px" height="85px">
+          </div>
+          <div class="col-md-7"><br>
+            <h3>MediConnect Health and Wellness Care </h3>
+            <h5>In the arms of healing, miracles happen.</h5>
+          </div>
+          <div class="col-md-2">
+            <h6 href=" " style="text-align:right ;padding-top: 40px; padding-left:98px;"><button type="button"
+                class="btn" class="hov" style="width:70px">Login</button></h6>
+          </div>
+          <div class="col-md-1">
+            <h6 href=" " style="text-align:right ;padding-top: 40px; padding-left:9px;"><button type="button"
+                class="btn" class="hov" style="width:150px">New Registration</button></h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 sm-12 lg-12 xl-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a style="color:white" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Our Facilities
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Primarycare.html">Primary Care</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="Emergencycare.html">Emergency Care</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="labproffiences.html">Lab Proffiencies</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="onlinedoctor.html">Online Doctor Consulatancy</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="appointment.html">Doctor Appointment</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="nursing.html">Nursing</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="about us.html">ABOUT US</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a style="color:white" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="General_surgery.html">General Surgery</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="dermatology.html">Dermatology </a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="Gastroenterology.html">Gastroenterology</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="dentistry.html">Dentistry</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="gynecology.html">Gynecology</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="maternity.html">Maternity</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="pediatrics.html">Pediatrics</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="tertiary.html">Tertiary care</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="wellness.html">Wellness</a>
+                </li>
+
+              </ul>
+              <div class="frm">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="appointment-form">
+        <h2 class="text-center mb-4">Doctor Appointment</h2>
+        <form id="appointmentForm">
+          <div class="mb-3">
+            <label for="doctor" class="form-label">Select Doctor</label>
+            <select class="form-select" id="doctor" required>
+              <option value="">Choose...</option>
+              <option value="dr_smith">Dr. John Smith</option>
+              <option value="dr_jones">Dr. Emily Jones</option>
+              <option value="dr_brown">Dr. Michael Brown</option>
+              <option value="dr_smith">Dr. Manusrut</option>
+              <option value="dr_jones">Dr. M. A. Amjad Khan</option>
+              <option value="dr_brown">Dr. Raghu Kumar. S CH</option>
+              <option value="dr_smith">Dr. N. Swapna Reddy</option>
+              <option value="dr_jones">Dr. Sindhura Mandava</option>
+              <option value="dr_brown">Dr. Padmaja</option>
+              <option value="dr_smith">Dr. Adi Rakesh Kumar</option>
+              <option value="dr_jones">Dr. Ajay Shesherao Shinde</option>
+              <option value="dr_brown">Dr. Sarada Pasangulapati</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Select Date</label>
+            <input type="date" class="form-control" id="date" required>
+          </div>
+          <div class="mb-3">
+            <label for="time" class="form-label">Select Time</label>
+            <input type="time" class="form-control" id="time" required>
+          </div>
+          <button type="button" class="btn btn-primary w-100" onclick="checkAvailability()">Check Availability</button>
+        </form>
+        <div id="availabilityResult" class="mt-4"></div>
+      </div>
+    </div>
+
+    <script>
+      function checkAvailability() {
+        const doctor = document.getElementById('doctor').value;
+        const date = document.getElementById('date').value;
+        const time = document.getElementById('time').value;
+
+        if (doctor && date && time) {
+          // Simulate an API call to check availability
+          setTimeout(() => {
+            const isAvailable = Math.random() > 0.5; // Randomly set availability for demo
+            const resultDiv = document.getElementById('availabilityResult');
+            if (isAvailable) {
+              resultDiv.innerHTML = '<div class="alert alert-success">The doctor is available at the selected time.</div>';
+            } else {
+              resultDiv.innerHTML = '<div class="alert alert-danger">The doctor is not available at the selected time.</div>';
+            }
+          }, 1000);
+        }
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

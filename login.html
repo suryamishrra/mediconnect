@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('images/signin_hospital.jpg');
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: transparent;
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: 0 0 150px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid #0f0f0fcc;
+            
+        }
+        
+
+        .tab-menu {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .tab {
+            width: 50%;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+
+        .tab.active {
+            border-bottom: 2px solid white;
+        }
+
+        .login-form {
+            text-align: center;
+        }
+
+        .login-form h1 {
+            margin-bottom: 40px;
+            color: #050404;
+        }
+
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        .input-group {
+            margin-bottom: 19px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            background-color: transparent;
+            border: 2px solid rgba(0, 0, 0, 0.542);
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0096a0;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #007d8f;
+        }
+
+        .register-link {
+            margin-top: 20px;
+        }
+
+        .register-link a {
+            color: rgb(36, 72, 94);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="login">
+        <div class="login-form">
+            <!-- <div class="logo">
+                <img src="images/logo.jpeg" alt="Healthcare Logo" height="80" width="90">
+            </div> -->
+            <h1>Login</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="email">Email id</label>
+                    <input type="email" id="email" name="email" required placeholder="email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="password">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div class="register-link">
+                <p>Don't have an account? <a href="registration.html">Register</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle the redirection -->
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            window.location.href = "index.html"; // Redirect to index.html
+        });
+    </script>
+</body>
+
+</html>
